@@ -7,15 +7,15 @@ public class BankHolidayData {
     private DivisionData englandAndWales;
     private DivisionData scotland;
     private DivisionData northernIreland;
+    @JsonProperty("england-and-wales")
+    public void setEnglandAndWales(DivisionData englandAndWales) {
+        this.englandAndWales = englandAndWales;
+    }
 
     public DivisionData getEnglandAndWales() {
         return englandAndWales;
     }
 
-    @JsonProperty("england-and-wales")
-    public void setEnglandAndWales(DivisionData englandAndWales) {
-        this.englandAndWales = englandAndWales;
-    }
 
     public DivisionData getScotland() {
         return scotland;

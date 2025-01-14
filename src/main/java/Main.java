@@ -4,7 +4,7 @@ public class Main {
         LocalDate date = LocalDate.now();
         Event event = new Event();
         EventClient client = new EventClient();
-        System.out.println(client.syncJackson(date).toString());
+        client.syncJackson(date);
     }
 
 }
